@@ -28,7 +28,8 @@ def  get_the_email_of_a_townhall_from_its_webpage(page_url)
 end
 
 #assembler les 2
-tableau.each do |url|
+liste_emails = []
+liste_emails << tableau.each do |url|
 	get_the_email_of_a_townhall_from_its_webpage(url) 
 end
 	
